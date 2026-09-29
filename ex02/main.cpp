@@ -47,10 +47,14 @@ int main()
 	dogAssigned = *dog;
 	Cat catAssigned;
 	catAssigned = *cat;
-	std::cout << "-------------------(deleting)\n";
-	delete animal;
 	delete dog;
 	delete cat;
+	std::cout << dogCopy.getIdea(0) << std::endl;
+	std::cout << dogAssigned.getIdea(0) << std::endl;
+	std::cout << catCopy.getIdea(0) << std::endl;
+	std::cout << catAssigned.getIdea(0) << std::endl;
+	std::cout << "-------------------(deleting)\n";
+	delete animal;
 	delete wrongCat;
 	std::cout << "-------------------(deleting animals)\n";
 	for (int i = 0; i < 10; i++)
